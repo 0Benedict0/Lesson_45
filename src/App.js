@@ -1,15 +1,14 @@
 import React from 'react';
-import { TodoProvider } from './context/TodoContext';
-import TodoList from './components/TodoList';
 import AddTodo from './components/AddTodo';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <TodoProvider>
-      <h1>Todo App с использованием Context API</h1>
+    <div>
+      <h1>Todo App с Redux Toolkit и Thunk</h1>
       <AddTodo />
       <TodoList />
-    </TodoProvider>
+    </div>
   );
 }
 
